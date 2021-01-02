@@ -14,7 +14,31 @@
     <header>
         <h1 class="Page-title">Taskinator</h1>
         <p>Click the button below to add a new task!</p>
-        <button class="btn" id="save-task">Add Task</button>
+        
+        <!-- Form Interface -->
+        <form id="task-form">
+
+            <!-- User input field for task name -->
+            <div class="form-group">
+                <input type="text" name="task-name" placeholder="Enter Task Name"/>
+            </div>
+
+            <!-- User input dropdown to select task type -->
+            <div class="form-group">
+                <select name="task-type" class="select-dropdown">
+                  <option value="" disabled selected>Pick a task type</option>
+                  <option value="Print">Vail</option>
+                  <option value="Web">Volunteer</option>
+                  <option value="Mobile">Personal</option>
+                </select>
+            </div>
+
+            <!-- Button to create task -->
+            <div class="form-group">
+              <button class="btn" id="save-task" type="submit">Add Task</button>
+            </div>
+          </form>
+
     </header>
 
     <!-- Main Body Content -->
